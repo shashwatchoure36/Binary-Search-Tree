@@ -24,14 +24,16 @@ public class Binary_Search_Tree {
 			root = new Node(data);
 		}
 		/*
-		 * If data is less than the root node then insert the data to left of the root
+		 * If data is less than the root node 
+		 * then insert the data to left of the root
 		 * node
 		 */
 		if (data < root.data) {
 			root.left = insertData(root.left, data);
 		}
 		/*
-		 * If data is greater than the root node then insert the data to right of the
+		 * If data is greater than the root node 
+		 * then insert the data to right of the
 		 * root node
 		 */
 		else if (data > root.data) {
@@ -61,16 +63,24 @@ public class Binary_Search_Tree {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Binary_Search_Tree bt = new Binary_Search_Tree();
-
+		
 		System.out.println();
 		System.out.println("BINARY SEARCH TREE");
-
-		bt.insert(22);
+	
+		bt.insert(61);
+		bt.insert(48);
+		bt.insert(33);
+		bt.insert(55);
+		bt.insert(51);
+		bt.insert(7);
+		bt.insert(12);
+		bt.insert(35);
+		bt.insert(10);
+		bt.insert(45);
 		bt.insert(11);
-		bt.insert(58);
+		bt.insert(17);
+		bt.insert(82);
 
 		bt.display();
 	}
